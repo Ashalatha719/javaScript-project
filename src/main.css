@@ -47,7 +47,7 @@ ul {
 
 ol>li:hover {
     cursor: pointer;
-    background-color: rgb(238, 228, 217);
+    background-color: rgb(199, 233, 255);
 }
 
 ol>li {
@@ -62,12 +62,34 @@ hr {
 
 ol {
     background-color: white;
+    height: 0;
     margin: 0;
+    display: none;
     padding: 0em 0em;
-    /* display: none; */
-
+    transform: scale(1, 0);
+    transform-origin: top center;
+    transform: translateY(-200px);
 }
 
+.menuOpen {
+    display: block;
+    height: auto;
+    transform: scale(1, 1);
+    transform: translateY(0px);
+    transform-origin: top center;
+    transition: transform 200ms ease-in-out;
+}
+
+
+.active {
+    background-color: #555;
+    color: white;
+    cursor: not-allowed;
+}
+
+.active:hover {
+    background-color: #555;
+}
 
 h1,
 ul {
@@ -82,6 +104,10 @@ h1 {
     background-color: rgb(172, 156, 133);
 }
 
+h1:hover {
+    cursor: pointer;
+}
+
 aside {
     height: 100%;
     box-sizing: border-box;
@@ -90,4 +116,5 @@ aside {
     background-color: bisque;
     overflow: scroll;
     overflow-x: hidden;
+    user-select: none;
 }
