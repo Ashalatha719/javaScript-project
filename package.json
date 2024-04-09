@@ -1,12 +1,12 @@
 {
-  "name": "trainingjs-project",
+  "name": "javascript-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "parcel src/index.html"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {

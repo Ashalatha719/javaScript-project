@@ -1,0 +1,93 @@
+:root {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: content-box;
+}
+
+/* Custom Scrollbar Starts */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Custom Scrollbar Ends */
+
+ul>li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.mainContainer {
+    height: 100vh;
+}
+
+ol>li:hover {
+    cursor: pointer;
+    background-color: rgb(238, 228, 217);
+}
+
+ol>li {
+    list-style-type: none;
+    padding: 1em 0;
+    padding-left: 2em;
+}
+
+hr {
+    margin: 0;
+}
+
+ol {
+    background-color: white;
+    margin: 0;
+    padding: 0em 0em;
+    /* display: none; */
+
+}
+
+
+h1,
+ul {
+    margin: 0;
+}
+
+h1 {
+    font-size: 1em;
+    padding-left: 1em;
+    line-height: 3.2;
+    height: 3em;
+    background-color: rgb(172, 156, 133);
+}
+
+aside {
+    height: 100%;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 1em 0;
+    background-color: bisque;
+    overflow: scroll;
+    overflow-x: hidden;
+}
